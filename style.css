@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  color: #111827;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+  flex-wrap: wrap;
+
+  margin-bottom: 24px;
+}
+
+.title-section h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.title-section p {
+  color: #6b7280;
+}
+
+.habit-input-section {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.habit-input-section input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+
+  width: 240px;
+  outline: none;
+}
+
+.habit-input-section button,
+.week-navigation button {
+  border: none;
+  background: #2563eb;
+  color: white;
+
+  padding: 12px 16px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.habit-input-section button:hover,
+.week-navigation button:hover {
+  background: #1d4ed8;
+}
+
+/* Week Navigation */
+
+.week-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 12px;
+  flex-wrap: wrap;
+
+  margin-bottom: 24px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#weekLabel {
+  font-weight: bold;
+}
+
+/* App Area */
+
+#app {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 16px;
+  }
+
+  .header,
+  .week-navigation {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .habit-input-section input {
+    width: 100%;
+  }
+
+  .habit-input-section button {
+    width: 100%;
+  }
+
+}
